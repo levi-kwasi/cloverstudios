@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Clover Studios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">Clover ☘ Studios</a>
+    </div>
+    <div class="middle-logo">
+      <img src="images/clover.png" alt="clover">
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="commerce.html">Commerce</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="services.html">Services</a>
+    </div>
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </div>
+
+  <!-- Toggle Button for Sidebar -->
+  <button class="toggle-btn" onclick="toggleSidebar()">Sign Up</button>
+
+  <!-- Sidebar for Sign Up -->
+  <div class="sidebar" id="sidebar">
+    <h3>Sign Up</h3>
+    <input type="text" placeholder="Name" />
+    <input type="email" placeholder="Email" />
+    <button>Register</button>
+  </div>
+
+  <!-- JavaScript to Toggle Sidebar -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+    }
+
+    // Close sidebar if clicking outside of it
+  document.addEventListener('click', function(event) {
+    const sidebar = document.getElementById('sidebar');
+    const toggleButton = document.querySelector('.toggle-btn');
+    
+    if (!sidebar.contains(event.target) && !toggleButton.contains(event.target)) {
+      sidebar.classList.remove('open');
+    }
+  });
+  </script>
+
+  <!-- Main Content -->
+  <div class="services-container">
+    <h1>Our Services</h1>
+    <div class="tab-row">
+      <button class="tab-active">Video Production</button>
+      <button class="tab-active">Photography</button>
+      <button class="tab-active">Website Designs</button>
+      <button class="tab-active">Social Media</button>
+      <button class="tab-active">Graphic Design</button>
+      <button class="tab-active">Audio Production</button>
+      <button class="tab-active">Motion Graphics</button>
+      <button class="tab-active">Event Coverage</button>
+    </div>
+  </div>
+  
+  <div class="tab-content-container">
+    <!-- Video Production Content -->
+    <div class="tab-content">
+      <h2>Video Production</h2>
+      <p>We produce high-quality videos for various platforms.</p>
+      <img src="video-production.jpg" alt="Video Production">
+    </div>
+
+    <!-- Photography Content -->
+    <div class="tab-content">
+      <h2>Photography</h2>
+      <p>Capture life's moment with our prophessional photography services.</p>
+      <img src="photography.jpg" alt="Photography">
+    </div>
+
+    <!-- Web Design Content -->
+    <div class="tab-content">
+      <h2>Web Design</h2>
+      <p>Create stunning websites with our expert web design services.</p>
+      <img src="web-desigh.jpg" alt="Web Design">
+    </div>
+
+    <!-- Social Media Management Content -->
+    <div class="tab-content">
+      <h2>Social Media</h2>
+      <p>Boost your online presence with our social media management services.</p>
+      <img src="social-media-management.jpg" alt="Social Media Management">
+    </div>
+    
+    <!-- Graphic Design Content -->
+    <div class="tab-content">
+      <h2>Graphic Design</h2>
+      <p>Create visually appealing graphics with our expert design services.</p>
+      <img src="graphic-design.jpg" alt="Graphic Design">
+    </div>
+
+    <!-- Audio Production Content -->
+    <div class="tab-content">
+      <h2>Audio Production</h2>
+      <p>Produce high quality audio for varios platforms.</p>
+      <img src="audio-production.jpg" alt="Audio Production">
+    </div>
+
+    <!-- Motion Graphics Content -->
+    <div class="tab-content">
+      <h2>Motion Graphics</h2>
+      <p>Create stunning motion graphics for your brand.</p>
+      <img src="motion-graphics.jpg" alt="Motion Graphics">
+    </div>
+
+    <!-- Event Coverage Content -->
+    <div class="tab-content">
+      <h2>Event Coverage</h2>
+      <p>Capture your event's moments with our expert coverage services.</p>
+      <img src="event-coverage.jpg" alt="Event Coverage">
+    </div>
+
+    <!-- Virtual Reality Content -->
+    <div class="tab-content">
+      <h2>Virtual Reality</h2>
+      <p>Experience immersive virtual reality experiences.</p>
+      <img src="virtual-reality.jpg" alt="Virtual Reality">
+    </div>
+
+    <!-- Virtual Reality Content -->
+    <div class="tab-content">
+      <h2>Drone Footages</h2>
+      <p>Experience immersive virtual reality experiences.</p>
+      <img src="virtual-reality.jpg" alt="Virtual Reality">
+    </div>
+    
+    <script src="script.js"></script>
+  </div>  
+</body>
+</html>

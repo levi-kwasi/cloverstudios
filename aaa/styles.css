@@ -1,0 +1,252 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url('images/pexels-pixabay-459277.jpg'); /* Replace with your image path */
+  background-size: cover; /* Makes the image cover the entire screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the image fixed when scrolling */
+  color: #333;
+  padding-top: 60px; /* Offset for sticky navbar */
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.navbar .nav-links a {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #007BFF;
+}
+
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px; /* Adjust according to your navbar height */
+    right: 20px;
+    background-color: white;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    right: -250px; /* Initially hidden */
+    top: 60px;
+    width: 250px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; /* Smooth transition */
+    border-radius: 30px;
+    z-index: 2000; /* High z-index to ensure it's on top */
+  }
+  
+  .sidebar.open {
+    right: 0; /* Slide in when open */
+  }
+  
+  .sidebar h3 {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar input, .sidebar button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .sidebar button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .sidebar button:hover {
+    background-color: #0056b3;
+  }
+ 
+  /* Toggle Button */
+  .toggle-btn {
+    position: fixed;
+    right: 10px;
+    top: 70px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1100;
+  }
+  
+  .toggle-btn:hover {
+    background-color: #0056b3;
+  }
+  
+/* Page Content */
+
+
+h1 {
+  margin-bottom: 30px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+
+/* About Page */
+.about {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+h4 {
+    margin-top: 45px;
+    margin-bottom: 17px;
+    color: #007BFF;
+}
+
+.image-about {
+  display: flex;
+  justify-content: center;
+  width: auto;  
+}
+
+/* Additional Styling for Aesthetic */
+.shadow-box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Commerce */
+.commerce-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.commerce-active {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  margin-bottom: 12px;
+  border-radius: 9px;
+}
+
+
+
+& img {
+  width: 10em;
+}
+
+/* Services */
+.services-container {
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.tab-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tab {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab-active {
+  border-color: aqua;
+  border-radius: 25px;
+  padding: 1em;
+  
+}
+
+.tab-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.tab-content {
+  padding: 2em;
+  background-color: rgba(246, 225, 250, 0.616);
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

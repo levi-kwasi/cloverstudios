@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commerce - Clover Studios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">Clover ☘ Studios</a>
+    </div>
+    <div class="middle-logo">
+        <img src="images/clover.png" alt="clover">
+      </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="commerce.html">Commerce</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="services.html">Services</a>
+    </div>
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </div>
+
+  <!-- Toggle Button for Sidebar -->
+  <button class="toggle-btn" onclick="toggleSidebar()">Sign Up</button>
+
+  <!-- Sidebar for Sign Up -->
+  <div class="sidebar" id="sidebar">
+    <h3>Sign Up</h3>
+    <input type="text" placeholder="Name" />
+    <input type="email" placeholder="Email" />
+    <button>Register</button>
+  </div>
+
+  <!-- JavaScript to Toggle Sidebar -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+    }
+
+    // Close sidebar if clicking outside of it
+  document.addEventListener('click', function(event) {
+    const sidebar = document.getElementById('sidebar');
+    const toggleButton = document.querySelector('.toggle-btn');
+    
+    if (!sidebar.contains(event.target) && !toggleButton.contains(event.target)) {
+      sidebar.classList.remove('open');
+    }
+  });
+  </script>
+
+  <!-- Main Content -->
+  <div class="Commerce">
+    <div class="shadow-box">
+      <h1>Get Available Quality Gadgets!</h1>
+      <p>You can get all you need here</p>
+    </div>
+  </div>
+  <main>
+    <div class="commerce-container">
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/digital-slr-sony-alpha-700-camera-lens-single-lens-reflex-camera-camera-lens-28fab1b37dcfc9f686c5027e2307862a.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>     
+      
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/nikon-d3300-nikon-af-s-dx-zoom-nikkor-18-55mm-f-3-5-5-6g-nikon-af-s-dx-nikkor-35mm-f-1-8g-digital-slr-nikon-dx-format-camera-cc670f33bbf4375b0cf1cb9d372654b4.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/sony-α7-ii-sony-α7r-ii-sony-alpha-7s-sony-a7r-camera-camera-165a2b2f50de7309f3f81b010157f1da.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/sony-hxr-mc2500-video-cameras-avchd-high-definition-video-high-definition-television-camera-0ad970fb892c33330c99b7b0d12724cc.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/photographic-film-camera-kodak-hasselblad-photography-vintage-camera-2e403864b42c91f4662a862877b296ac.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/Plaid_5490dec3-5cf6-4999-ae91-deb28408d78e.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/wide-angle-lens-camera-lens-normal-lens-photography-ultra-wide-angle-lens-camera-lens-7167def275d60fc259dd736f463faff8.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/mirrorless-interchangeable-lens-camera-camera-lens-single-lens-reflex-camera-digital-slr-creative-camera-cea3752adf0f5ab83e70afded4d3f074.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/mirrorless-interchangeable-lens-camera-single-lens-reflex-camera-video-camera-camera-c7c8e503ff64738a2d57ec14ec6788a4.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/nikon-d850-camera-full-frame-digital-slr-photography-camera-flash-082c4bac9416f0a1be936290269a0deb.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/single-lens-reflex-camera-canon-eos-650d-slr-camera-c883822a5bb2213792d779165752b1c4.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/wildlife-photography-camera-nature-photography-digital-slr-camera-leisure-7e906abd15bd646a852b9cd23e450896.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/nikon-df-nikon-d4-camera-digital-slr-vintage-camera-053ad6778454a4f99368db8719b32819.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/canon-ef-lens-mount-canon-ef-100mm-lens-canon-eos-canon-ef-100mm-f-2-8l-macro-is-usm-canon-ef-100mm-f-2-8-macro-usm-camera-lens-cb4801ae1d2e4a7324dc920b335ba94b.png" alt="camera.png" style="width: 6em;">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/carpe-media-camcorder-video-cameras-digital-slr-photography-camera-a3405912333bf36f477f80ddc12316e4.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/digital-slr-camera-lens-photography-flash-single-lens-reflex-camera-slr-camera-electronics-material-free-download-498e4fac0b70498e5f9835776012927e.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/camera-lens-camera-stabilizer-digital-slr-gimbal-camera-lens-9624193609f2bfc6bbd0df09ffb1c2c1.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+
+      <div class="commerce-active">
+        <h3>Canon 5D Mark IV</h3>
+          <img src="images/canon-ef-lens-mount-blackmagic-ursa-mini-4-6k-blackmagic-ursa-mini-4k-blackmagic-design-digital-movie-camera-camera-1c291b8a48bb4d9ea67cb471b854caca.png" alt="camera.png">
+          <h3>$799</h3>  
+          <button>Purchase</button>
+          <button><span>🤍</span></button>
+      </div>
+    </div> 
+    <script src="script.js"></script>  
+  </main> 
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Clover Studios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">Clover ☘ Studios</a>
+    </div>
+    <div class="middle-logo">
+      <img src="images/clover.png" alt="clover">
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="commerce.html">Commerce</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="services.html">Services</a>
+    </div>
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </div>
+
+  <!-- Toggle Button for Sidebar -->
+  <button class="toggle-btn" onclick="toggleSidebar()">Sign Up</button>
+
+  <!-- Sidebar for Sign Up -->
+  <div class="sidebar" id="sidebar">
+    <h3>Sign Up</h3>
+    <input type="text" placeholder="Name" />
+    <input type="email" placeholder="Email" />
+    <button>Register</button>
+  </div>
+  
+  <!-- JavaScript to Toggle Sidebar -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('open');
+    }
+    
+    // Close sidebar if clicking outside of it
+  document.addEventListener('click', function(event) {
+    const sidebar = document.getElementById('sidebar');
+    const toggleButton = document.querySelector('.toggle-btn');
+    
+    if (!sidebar.contains(event.target) && !toggleButton.contains(event.target)) {
+      sidebar.classList.remove('open');
+    }
+  });
+  </script>
+
+  <!-- Main Content -->
+<main>
+  <div class="about">
+    <div>
+      <h4>Know Everything... About Us</h4>
+      <h1>About CloverStudios</h1>
+      <p>This is the Home page. Browse through our blog, learn more about us, check out our projects, and explore our portfolio!</p>
+    </div>
+  </div>
+</main>
+
+  <!-- Image Section -->
+  <div class="image-about">
+    <img src="images/360_F_818320319_EVWqxu17touepZ1olY4hyW589mh5PMxd.jpg" alt="About Us Image" style="width:100%; max-width:800px; border-radius:8px";>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</html>
