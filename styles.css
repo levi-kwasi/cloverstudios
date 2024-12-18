@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url('images/pexels-pixabay-459277.jpg'); /* Replace with your image path */
+  background-image: url('/images/pexels-pixabay-459277.jpg'); /* Replace with your image path */
   background-size: cover; /* Makes the image cover the entire screen */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
